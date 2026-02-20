@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
-@layer components {
-  .container {
-    width: 100%;
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
+@theme {
+  --color-primary: oklch(0.55 0.15 45);
+  --color-secondary: oklch(0.45 0.08 120);
+  --color-background: #FDFBF7;
+  --color-text: #2D2D2A;
+  --color-accent: #5C5552;
+  --color-muted: oklch(0.55 0.02 264);
+  --color-border: oklch(0.9 0.01 264);
+  --color-surface: oklch(1 0 0); 
 }
 
 body {
@@ -17,4 +17,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* background-color: var(--color-background); */
+  color: var(--color-text);
 }
